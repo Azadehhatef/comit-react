@@ -96,7 +96,7 @@ Here's a few more things you can do with anchor tags
 
 <!-- Will take the user to element that has `id="my-element"` -->
 <a href="#my-element">Go my element</a>
-<p id="my-element">Imagine i'm way down the page</p>
+<p id="my-element">Imagine i'm way down the page 
 ```
 
 # Exercise Instructions

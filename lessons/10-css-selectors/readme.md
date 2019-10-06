@@ -2,7 +2,7 @@
 
 Nice! Our websites are starting to get some color to them.
 
-`style=""` attributes are great, they let us add style directly to an element. But what if we took our last example and said we wanted to have all of the paragraphs to have a `font-size` of 18px. Well, we'd have to go back to _every_ `<p>` tag and update its style to contain `font-size: 18px`.
+`style=""` attributes are great, they let us add style directly to an element. But what if we took our last example and said we wanted to have all of the paragraphs to have a `font-size` of 18px. Well, we'd have to go back to _every_ ` ` tag and update its style to contain `font-size: 18px`.
 
 Pretty inconvenient, right?
 
@@ -23,9 +23,9 @@ Let's look at an example of how we could do the above of setting every paragraph
     </style>
   </head>
   <body>
-    <p>lorem ipsum....</p>
-    <p>lorem ipsum....</p>
-    <p>lorem ipsum....</p>
+     lorem ipsum.... 
+     lorem ipsum.... 
+     lorem ipsum.... 
   </body>
 </html>
 ```
@@ -46,7 +46,7 @@ This looks a bit different to what we're used to. Let's break it down:
 </style>
 ```
 
-A selector is what is to the left of the opening curly brace (`{`), in this case it's the `p` meaning we want to target EVERY `<p>` tag on the webpage.
+A selector is what is to the left of the opening curly brace (`{`), in this case it's the `p` meaning we want to target EVERY ` ` tag on the webpage.
 
 After the selector we have a pair of curly braces `{` and `}` with our CSS property inside. Think of these like an opening and closing html tag. We place any CSS properties we want our selector to be affected by inside the opening and closing curly braces.
 
@@ -104,7 +104,7 @@ By separating the selectors with a comma, it will attach the properties defined 
 
 ## Class Selectors
 
-Going back to last lessons example, what if we wanted to target only the first group of 3 `<p>` tags inside that `<div>` element?
+Going back to last lessons example, what if we wanted to target only the first group of 3 ` ` tags inside that `<div>` element?
 
 If we just did that `p` selector above, we would also be targeting the other group of 3 paragraphs in the second div.
 
@@ -114,9 +114,9 @@ You can give any tag a `class` attribute, that we can then later target later us
 
 ```html
 <div class="first-group">
-  <p>lorem ipsum....</p>
-  <p>lorem ipsum....</p>
-  <p>lorem ipsum....</p>
+   lorem ipsum.... 
+   lorem ipsum.... 
+   lorem ipsum.... 
 </div>
 ```
 
@@ -134,21 +134,21 @@ Now let's see how we can target that using a selector.
   </head>
   <body>
     <div class="first-group">
-      <p>lorem ipsum....</p>
-      <p>lorem ipsum....</p>
-      <p>lorem ipsum....</p>
+       lorem ipsum.... 
+       lorem ipsum.... 
+       lorem ipsum.... 
     </div>
 
     <div>
-      <p>lorem ipsum....</p>
-      <p>lorem ipsum....</p>
-      <p>lorem ipsum....</p>
+       lorem ipsum.... 
+       lorem ipsum.... 
+       lorem ipsum.... 
     </div>
   </body>
 </html>
 ```
 
-We can reference a CSS class in our style tag by using a period and then the class name: `.class-name-here`. Just like we targeted all `<p>` tags using the `p {}` selector, we can target every element that has that class using the above.
+We can reference a CSS class in our style tag by using a period and then the class name: `.class-name-here`. Just like we targeted all ` ` tags using the `p {}` selector, we can target every element that has that class using the above.
 
 Classes can be given to any number of elements, and any element can have multiple classes (separated by a space).
 
@@ -169,15 +169,15 @@ Let's see what this looks like:
   </head>
   <body>
     <div class="red-background white-text">
-      <p>lorem ipsum....</p>
-      <p>lorem ipsum....</p>
-      <p>lorem ipsum....</p>
+       lorem ipsum.... 
+       lorem ipsum.... 
+       lorem ipsum.... 
     </div>
 
     <div class="red-background">
-      <p>lorem ipsum....</p>
-      <p>lorem ipsum....</p>
-      <p>lorem ipsum....</p>
+       lorem ipsum.... 
+       lorem ipsum.... 
+       lorem ipsum.... 
     </div>
   </body>
 </html>
@@ -203,12 +203,12 @@ Just like classes, we can give elements an ID and target them through a CSS sele
   </head>
   <body>
     <div id="personal-information">
-      <p>Name: Ozzie</p>
-      <p>Location: Canada</p>
+       Name: Ozzie 
+       Location: Canada 
     </div>
     <div id="company-information">
-      <p>Name: Acme</p>
-      <p>Location: Canada</p>
+       Name: Acme 
+       Location: Canada 
     </div>
   </body>
 </html>
@@ -269,20 +269,20 @@ If we didn't only want to narrow it down to `<input>` tags.
 
 ## Descendant Combinator
 
-Given the following markup, how could we target the `<p>` tags inside the first div (`.numbers-container`) without targeting the ones in the second (`.text-container`)?
+Given the following markup, how could we target the ` ` tags inside the first div (`.numbers-container`) without targeting the ones in the second (`.text-container`)?
 
 ```html
 <div class="numbers-container">
-  <p>1</p>
-  <p>2</p>
+   1 
+   2 
 </div>
 <div class="text-container">
-  <p>Lorem ipsum...</p>
-  <p>Lorem ipsum...</p>
+   Lorem ipsum... 
+   Lorem ipsum... 
 </div>
 ```
 
-If we just used a `p` selector we would target all 4 so that wouldn't work. We could add a class to both `<p>` tags inside the first div, but that would be repetitive.
+If we just used a `p` selector we would target all 4 so that wouldn't work. We could add a class to both ` ` tags inside the first div, but that would be repetitive.
 
 Instead, we can use descendant combinators to target an elements _children_.
 
@@ -300,12 +300,12 @@ Instead, we can use descendant combinators to target an elements _children_.
   </head>
   <body>
     <div class="numbers-container">
-      <p>1</p>
-      <p>2</p>
+       1 
+       2 
     </div>
     <div class="text-container">
-      <p>Lorem ipsum...</p>
-      <p>Lorem ipsum...</p>
+       Lorem ipsum... 
+       Lorem ipsum... 
     </div>
   </body>
 </html>
@@ -319,14 +319,14 @@ The descendant combinator we have above is
 }
 ```
 
-Where we have the _parent_ selector `.numbers-container`, and then a space, and then the _child_ selector of `p`. This says we want to target ALL of the `<p>` tags INSIDE the `.numbers-container`. It doesn't matter how many levels of nesting there are, if there is a `<p>` inside of `.numbers-container` it will be impacted. For example,
+Where we have the _parent_ selector `.numbers-container`, and then a space, and then the _child_ selector of `p`. This says we want to target ALL of the ` ` tags INSIDE the `.numbers-container`. It doesn't matter how many levels of nesting there are, if there is a ` ` inside of `.numbers-container` it will be impacted. For example,
 
 ```html
 <div class="numbers-container">
   <div>
     <div>
       <div>
-        <p>I would still be red</p>
+         I would still be red 
       </div>
     </div>
   </div>
@@ -335,7 +335,7 @@ Where we have the _parent_ selector `.numbers-container`, and then a space, and 
 
 The paragraph inside the above would be red.
 
-What if we want to only target `<p>` tags that are IMMEDIATE children of the `.numbers-container` element?
+What if we want to only target ` ` tags that are IMMEDIATE children of the `.numbers-container` element?
 
 Using the same syntax as the descendant combinator we just learned, we can place a `>` operator between the two selectors to only target the immediate children. See the example below
 
@@ -350,12 +350,12 @@ Using the same syntax as the descendant combinator we just learned, we can place
   </head>
   <body>
     <div class="text-container">
-      <p>I would be red</p>
+       I would be red 
       <div>
-        <p>
+         
           This paragraph wouldn't be red because it is not an immediate child of
           .numbers-container
-        </p>
+         
       </div>
     </div>
   </body>

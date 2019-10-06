@@ -22,7 +22,7 @@ Look at the folowing code, what color will the paragraph be?
   <body>
     <p id="p-id" class="p-class" style="color: brown">
       What color will my text be?
-    </p>
+     
   </body>
 </html>
 ```
@@ -66,7 +66,7 @@ Here is a moderately complex example, but a common pattern you will see in web d
 - We say that we want all `<a>` tags to be orange, easy enough
 - Then we define a generic `.active` class that we can add to any element to make its color "green"
 - Then we say that we don't want links in our nav that have an `.active` class to be green and instead we want them to be pink (deeppink)
-- This way, our nav links stay orange. Our `<p>` in the body stays green (because it has `.active`). And our "About" link in our nav is pink (even though it has the `.active` class that would normally make it green).
+- This way, our nav links stay orange. Our ` ` in the body stays green (because it has `.active`). And our "About" link in our nav is pink (even though it has the `.active` class that would normally make it green).
 
 ```html
 <html>
@@ -94,7 +94,7 @@ Here is a moderately complex example, but a common pattern you will see in web d
       </ul>
     </nav>
     
-    <p class="active">I'm active</p>
+    <p class="active">I'm active 
   </body>
 </html>
 ```

@@ -176,7 +176,7 @@ The label is an element that we can use in conjuction with an input to provide c
 </form>
 ```
 
-Now you might be thinking, can't we just use a `<p>` tag to say what the input is for? Well, you could but there are a few reasons not to:
+Now you might be thinking, can't we just use a ` ` tag to say what the input is for? Well, you could but there are a few reasons not to:
 
 1. `<label>` is more _semantically_ correct when it comes to accessibility in that it can inform the user that this label is for a certain input
 2. Related to the above, we can directly tell a label that it is for a certain input using the `for=""` attribute on the label. This will also make it so when you click on the label it focuses the input (places your cursor inside of the input).
