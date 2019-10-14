@@ -1,0 +1,13 @@
+
+p{
+    font-size: 18px;  
+}
+header{
+      text-align: center;
+  }
+nav a{
+      color: red;
+  }
+  .current-page {
+      color: #00aced;
+  }
