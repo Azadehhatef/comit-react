@@ -7,7 +7,6 @@ else if (officeHour < 8 || officeHour >= 18) {
 
     alert("Hour is outside of office hours");
 }
-
-else if (officeHour >= 8 && officeHour < 18){
+else if (officeHour >= 8 && officeHour < 18) {
     alert("Welcome! we are open");
 }
