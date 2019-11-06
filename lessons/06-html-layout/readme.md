@@ -79,10 +79,10 @@ Let's say you have a blog article that shows the date it was posted in a nice an
 ```html
 <article>
   <h1>Important News Article</h1>
-  <p><em>Posted on Jan 06, 2019</em></p>
-  <p>
+   <em>Posted on Jan 06, 2019</em> 
+   
     Lorem, ipsum dolor sit amet consectetur adipisicing elit...
-  </p>
+   
 </article>
 ```
 
@@ -103,12 +103,12 @@ Since we want this only on the date and not the whole "Posted on..." text, we wo
 ```html
 <article>
   <h1>Important News Article</h1>
-  <p>
+   
     <em>Posted on <span title="2019-01-06 08:15:36">Jan 06, 2019</span></em>
-  </p>
-  <p>
+   
+   
     Lorem, ipsum dolor sit amet consectetur adipisicing elit...
-  </p>
+   
 </article>
 ```
 
@@ -121,13 +121,13 @@ If we were replace that `<span>` with a `<div>`, you can see the difference:
 ```diff
 <article>
   <h1>Important News Article</h1>
-  <p>
+   
 -    <em>Posted on <span title="2019-01-06 08:15:36">Jan 06, 2019</span></em>
 +    <em>Posted on <div title="2019-01-06 08:15:36">Jan 06, 2019</div></em>
-  </p>
-  <p>
+   
+   
     Lorem, ipsum dolor sit amet consectetur adipisicing elit...
-  </p>
+   
 </article>
 ```
 
@@ -141,12 +141,12 @@ There's a few more element's we can use to manipulate a page's layout. These are
 
 Produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant.
 
-If you haven't noticed already, doing this inside of a `<p>` tag:
+If you haven't noticed already, doing this inside of a ` ` tag:
 
 ```html
-<p>
+ 
   I am on multiple lines but i appear as one
-</p>
+ 
 ```
 
 Will show up all in the same line. That's because in HTML line breaks do not matter and whitespace is only counted for one character (e.g. if you have `text spaced out` will be rendered as `text spaced out`).
@@ -154,7 +154,7 @@ Will show up all in the same line. That's because in HTML line breaks do not mat
 To get around this, we can use the `<br />` element inside of paragraph tags.
 
 ```html
-<p>
+ 
   O’er all the hilltops<br />
   Is quiet now,<br />
   In all the treetops<br />
@@ -163,7 +163,7 @@ To get around this, we can use the `<br />` element inside of paragraph tags.
   The birds are asleep in the trees:<br />
   Wait, soon like these<br />
   Thou too shalt rest.
-</p>
+ 
 ```
 
 The above will insert a break at the end of each line.
@@ -173,11 +173,11 @@ The above will insert a break at the end of each line.
 The `horiztonal rule` element. Represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section.
 
 ```html
-<p>1: The first rule of Fight Club is: You do not talk about Fight Club.</p>
+ 1: The first rule of Fight Club is: You do not talk about Fight Club. 
 
 <hr />
 
-<p>2: The second rule of Fight Club is: Always bring cupcakes.</p>
+ 2: The second rule of Fight Club is: Always bring cupcakes. 
 ```
 
 Most browsers will render this as a solid grey line.
@@ -193,7 +193,7 @@ We're going to create a small blog.
 - Create a `<main>` container underneath the `<header>`, not inside
 - Create 3 `<article>` elements, each with:
   - A level 2 heading for the title, named whatever you want
-  - A date underneath the title, formatted as e.g. `Jan 06, 2019`, italicized (without CSS), in a `<p>` tag. Hovering the date should reveal a more specific time
+  - A date underneath the title, formatted as e.g. `Jan 06, 2019`, italicized (without CSS), in a ` ` tag. Hovering the date should reveal a more specific time
   - A single paragraph underneath the date, acting as an article summary or preview
     - Can be generated from [lorem ipsum](https://www.lipsum.com/feed/html)
   - Clicking on the article title should take you to the page for the post (created in next step)
@@ -210,7 +210,7 @@ We're going to create a small blog.
     - 5 paragraphs of lorem ipsum
     - Use a `<br />` to separate two of the paragraphs
     - Use `<hr />` after the last paragraph
-    - Insert a `<footer>` with a `<p>` tag containing `- Your Name`
+    - Insert a `<footer>` with a ` ` tag containing `- Your Name`
 
 # Exercise Result
 

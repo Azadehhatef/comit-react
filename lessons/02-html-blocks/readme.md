@@ -25,13 +25,13 @@ We can give plain text some modifications using certain elements:
 - `<sup>` - superscripts any text
 
 ```html
-<p>Example math 10<sup>4</sup></p>
-<p>Example Footnote<sub>3</sub></p>
-<p><strong>Notice me</strong></p>
-<p><em>Implying something</em></p>
-<p>
+ Example math 10<sup>4</sup> 
+ Example Footnote<sub>3</sub> 
+ <strong>Notice me</strong> 
+ <em>Implying something</em> 
+ 
   <strong><em>Can be combined</em></strong>
-</p>
+ 
 ```
 
 You'll notice that it just gets rendered all in the same line. That's because like these text modifiers, plain text is also considered inline.

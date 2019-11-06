@@ -50,7 +50,7 @@ We can pick the font we want the element to use via the `font-family` property:
 
 ```html
 <h1 style="font-family: sans-serif">My Website</h1>
-<p>I will have a the default serif font</p>
+ I will have a the default serif font 
 ```
 
 Browsers and operating systems supply a few default fonts that you can use freely, but if you want something out of that realm you will have to download it and serve it on your website.
@@ -83,7 +83,7 @@ Font weights can be set using a keyword (e.g. `bold`), or a number (usually an e
 Font style allows us to choose if a font is italic or normal, similar to how we would do it using the html tag `<em>`:
 
 ```html
-<p style="font-style: italic;">I'm italicized</p>
+<p style="font-style: italic;">I'm italicized 
 ```
 
 [More on font-style on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/font-style)
@@ -93,11 +93,11 @@ Font style allows us to choose if a font is italic or normal, similar to how we 
 text-transform allows us to uppercase, lowercase, or capitalize text:
 
 ```html
-<p style="text-transform: uppercase;">I'm all uppercase</p>
+<p style="text-transform: uppercase;">I'm all uppercase 
 <p style="text-transform: lowercase;">
   I'M WRITTEN USING CAPS BUT AM DISPLAYED AS ALL LOWERCASE
-</p>
-<p style="text-transform: capitalize;">each word should be capitalized</p>
+ 
+<p style="text-transform: capitalize;">each word should be capitalized 
 ```
 
 [More on text-transform on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
@@ -121,23 +121,23 @@ We can use the following values: `inherit`, `left`, `right`, `center`, `justify`
 
 <!-- Adding this to the div makes all children align right -->
 <div style="text-align: right;">
-  <p>
+   
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi itaque, ad
     quo eius tempora reiciendis suscipit porro nihil, voluptate facere, cum
     totam molestiae ut earum quod sapiente non amet provident.
-  </p>
-  <p>
+   
+   
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi itaque, ad
     quo eius tempora reiciendis suscipit porro nihil, voluptate facere, cum
     totam molestiae ut earum quod sapiente non amet provident.
-  </p>
+   
 </div>
 
 <p style="text-align: left;">
   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi itaque, ad
   quo eius tempora reiciendis suscipit porro nihil, voluptate facere, cum totam
   molestiae ut earum quod sapiente non amet provident.
-</p>
+ 
 ```
 
 # Exercise Instructions
